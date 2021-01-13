@@ -21,32 +21,32 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    <build>
-        <finalName>${project.artifactId}</finalName>
-        <sourceDirectory>src</sourceDirectory>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>android-maven-plugin</artifactId>
-                    <version>3.1.1</version>
-                    <extensions>true</extensions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <sdk>
-                        <!-- platform or api level (api level 4 = platform 1.6)-->
-                        <platform>25</platform>
-                        <path>/opt/android-sdk/</path>
-                    </sdk>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+   <build>
+  <finalName>${project.artifactId}</finalName>
+  <sourceDirectory>src</sourceDirectory>
+  <pluginManagement>
+   <plugins>
+    <plugin>
+     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+     <artifactId>android-maven-plugin</artifactId>
+     <version>3.1.1</version>
+     <extensions>true</extensions>
+    </plugin>
+   </plugins>
+  </pluginManagement>
+  <plugins>
+   <plugin>
+    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+    <artifactId>android-maven-plugin</artifactId>
+    <configuration>
+     <sdk>
+      <!-- platform or api level (api level 4 = platform 1.6) -->
+      <platform>8</platform>
+     </sdk>
+    </configuration>
+   </plugin>
+  </plugins>
+ </build>
+    
+  
 </project>
