@@ -38,10 +38,12 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
+                <version>3.6.0</version>
                 <configuration>
                     <sdk>
                         <!-- platform or api level (api level 4 = platform 1.6)-->
                         <platform>20</platform>
+                        <path>/opt/android-sdk/</path>
                     </sdk>
                 </configuration>
             </plugin>
